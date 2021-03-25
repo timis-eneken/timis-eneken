@@ -1,0 +1,34 @@
+.container
+  %section.hero.is-small
+    .hero-body
+      %p.title
+        Τιμής Ένεκεν
+      %p.subtitle
+        Ψηφιακό Αρχείο της εκπομπής <strong>Τιμής Ένεκεν</strong>, του τρίτου προγράμματος της Ελληνικής ραδιοφωνίας. Παρουσιάζει ο Δαυίβ Ναχμίας.
+  %section
+    %hr
+  .container
+    %section
+      %table.table
+        %thead
+          %th Προσκεκλημένος
+          %th Ημερομηνία
+          %th Θεματολογία
+          %th Εκπομπή
+        - blog('shows').articles.each do |show|
+          %tbody
+            %tr
+              %td
+                = link_to show.data.guest, show.url
+                %br
+                #{show.data.part}
+              %td #{show.date.strftime("%d/%m/%Y")}
+              %td #{show.data.tags}
+              %td
+                .media
+                  .media-left
+                    %figure
+                      %audio{:controls => "", :src => "#{show.data.audio}"}
+                        Your browser does not support the
+                        %code audio
+                        element.

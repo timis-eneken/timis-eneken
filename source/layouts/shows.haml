@@ -1,0 +1,30 @@
+!!!
+%html{:lang => "el"}
+  %head
+    %title Τιμής Ένεκεν
+    = partial "partials/meta"
+    %body
+      = partial "partials/navbar"
+      %hr
+      .container
+        .columns
+          .column.is-one-third
+            %p.title #{current_article.title}
+            %p <strong>Ημερομηνία</strong>: #{current_article.date.strftime("%d/%m/%Y")}
+            %p <strong>Ιδιότητα</strong>: #{current_article.data.crafts.join(", ")}
+            %p <strong>Θεματολογία</strong>: #{current_article.tags.join(", ")}
+          .column.is-two-thirds
+            %p.subtitle Περιγραφή
+            .media
+              .media-left
+                %figure
+                  %audio{:controls => "", :src => "#{current_article.data.audio}"}
+                    Your browser does not support the
+                    %code audio
+                    element.
+            %p #{current_article.data.intro}
+        %hr
+        %h1.title Απομαγνητοφώνηση Εκπομπής
+        = yield
+      %hr
+      = partial "partials/footer"

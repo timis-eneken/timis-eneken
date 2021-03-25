@@ -1,0 +1,20 @@
+!!!
+%html{:lang => "el"}
+  %head
+    %title Τιμής Ένεκεν
+    = partial "partials/meta"
+    %body
+      = partial "partials/navbar"
+      .container
+        %hr
+        %section.hero.is-small
+          .hero-body
+            %p.title
+              Τιμής Ένεκεν
+            %p.subtitle
+              Ψηφιακό Αρχείο της εκπομπής <strong>Τιμής Ένεκεν</strong>, του τρίτου προγράμματος της Ελληνικής ραδιοφωνίας. Παρουσιάζει ο Δαυίβ Ναχμίας.
+        %section
+          %hr
+          = yield
+      %hr
+      = partial "partials/footer"

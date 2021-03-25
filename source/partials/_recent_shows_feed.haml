@@ -1,0 +1,22 @@
+.columns
+  - blog('shows').articles[0...3].each do |show|
+    .column.is-one-third
+      .card
+        .card-image
+          %figure.image.is-4by3
+            %img{:alt => "profile picture", :src => "#{show.data.picture}" }/
+        .card-content
+          .content
+            %p.title
+              = link_to show.title, show.url
+            %p
+              #{show.date.strftime("%d/%m/%Y")}, μέρος #{show.data.part}
+          .media
+            .media-left
+              %figure
+                %audio{:controls => "", :src => "#{show.data.audio}"}
+                  Your browser does not support the
+                  %code audio
+                  element.
+          .content
+            %p #{show.data.intro}

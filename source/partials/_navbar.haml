@@ -1,0 +1,32 @@
+.container
+  .columns
+    .column.is-four-fifths
+      %nav.navbar{"aria-label" => "main navigation", :role => "navigation"}
+        .navbar-brand
+          %a.navbar-burger{"aria-expanded" => "false", "aria-label" => "menu", "data-target" => "navbar", :role => "button"}
+            %span{"aria-hidden" => "true"}
+            %span{"aria-hidden" => "true"}
+            %span{"aria-hidden" => "true"}
+        #navbar.navbar-menu
+          .navbar-start
+            %a.navbar-item{:href => "/"}
+              %span.icon-text
+                %span.icon
+                  %i.fas.fa-home
+                %span αρχική
+            %a.navbar-item{:href => "/pages/about.html"}
+              %span.icon-text
+                %span.icon
+                  %i.fas.fa-info
+                %span περί
+          .navbar-end
+    .column.is-one-fifth
+      .navbar-item
+        %form#searchForm{:action => "https://google.com/search", :name => "searchForm"}
+          .field.has-addons
+            .control
+              %input.input{:type => "text", :name => "q"}/
+              %input{:name => "q", :type => "hidden", :value => "site:timis-eneken.github.io"}/
+            .control
+              %a
+                %input.button.is-black{:name => "submit", :type => "submit", :value => "έρευνα"}/

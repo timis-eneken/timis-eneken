@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Τιμής Ένεκεν</title>
+    <language>el-GR</language>
+    <copyright>David Nachmias 2018-2021</copyright>
+    <description>Η εκπομπή 'Τιμής Ένεκεν' εκθέτει το έργο και το πνεύμα Ελλήνων του 20ου και 21ου αιώνα.</description>
+    <link>https://timis-eneken.github.io/</link>
+    <atom:link href="https://timis-eneken.github.io/podcast.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>David Nachmias</itunes:author>
+    <itunes:subtitle>Τιμής Ένεκεν</itunes:subtitle>
+    <itunes:explicit>clean</itunes:explicit>
+    <itunes:category text="Society &amp; Culture"/>
+    <itunes:summary>Η εκπομπή 'Τιμής Ένεκεν' εκθέτει το έργο και το πνεύμα Ελλήνων του 20ου και 21ου αιώνα.</itunes:summary>
+    <itunes:image href="https://ia601403.us.archive.org/18/items/timis-eneken/timen-logo-web.png"/>
+    <itunes:owner>
+      <itunes:name>Panagiotis Atmatzidis</itunes:name>
+      <itunes:email>atma@convalesco.org</itunes:email>
+    </itunes:owner>
+    <item>
+      <title>Γιώργος Μανιώτης A' από 3</title>
+      <description>Το πρώτο απ’ τα τρία μέρη της συνέντευξης με τον μείζονα συγγραφέα, Γιώργου Μανιώτη. Μία δύσπεπτη κουβέντα για τις κοινωνικές παθογένειες που καθιστούν την κρίση δυσυπέρβλητη και απαράκαμπτη. Τιμής Ένεκεν για τον συγγραφέα Γιώργο Μανιώτη.
+</description>
+      <pubDate>Sat, 01 Sep 2018 14:00:00 +0300</pubDate>
+      <guid>/shows/2018/09/01/giorgos-maniotis-a-apo-3-2018.html</guid>
+      <link>https://timis-eneken.github.io/shows/2018/09/01/giorgos-maniotis-a-apo-3-2018.html</link>
+      <itunes:author>David Nachmias</itunes:author>
+      <itunes:title>Γιώργος Μανιώτης</itunes:title>
+      <itunes:subtitle>Συγγραφέας, Σκηνοθέτης</itunes:subtitle>
+      <itunes:summary>Το πρώτο απ’ τα τρία μέρη της συνέντευξης με τον μείζονα συγγραφέα, Γιώργου Μανιώτη. Μία δύσπεπτη κουβέντα για τις κοινωνικές παθογένειες που καθιστούν την κρίση δυσυπέρβλητη και απαράκαμπτη. Τιμής Ένεκεν για τον συγγραφέα Γιώργο Μανιώτη.
+</itunes:summary>
+      <itunes:duration>0:57:09</itunes:duration>
+      <itunes:image href="https://archive.org/download/timen-logo-v4/timen-logo-v4.png"/>
+      <itunes:explicit>clean</itunes:explicit>
+      <enclosure url="https://ia801403.us.archive.org/18/items/timis-eneken/timis-eneken-01-09-18-giorgos-maniotis-a-meros-apo-3-afieroma-archeio-podcast.mp3" length="83715930" type="audio/mpeg"/>
+      <media:content url="https://ia801403.us.archive.org/18/items/timis-eneken/timis-eneken-01-09-18-giorgos-maniotis-a-meros-apo-3-afieroma-archeio-podcast.mp3" type="audio/mpeg"/>
+    </item>
+  </channel>
+</rss>

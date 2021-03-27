@@ -1,24 +1,20 @@
 %section.hero.is-small.is-black
   .hero-body
     .columns
-      .column.is-four-fifths
+      .column.is-2
+        %figure.image.is-128x128
+          %img{:alt => "David Nachmias Banner", :src => "/assets/media/images/olive-branch-black-bg.png", :height => "130", :width => "220" }/
+      .column.is-8
         %p.title Τιμής Ένεκεν
         %p.subtitle
-          Ψηφιακό Αρχείο της εκπομπής <strong>Τιμής Ένεκεν</strong>, του
+          Ψηφιακό αρχείο της εκπομπής <strong>Τιμής Ένεκεν</strong>, του
           %a{href: "https://webradio.ert.gr/trito/"}τρίτου προγράμματος
-          της Ελληνικής ραδιοφωνίας
+          της Ελληνικής ραδιοφωνίας.
           %br
-          Παραγωγή, επιμέλεια &amp; παρουσίαση
-          %a{href: "https://el.wikipedia.org/wiki/%CE%94%CE%B1%CF%85%CE%AF%CE%B4_%CE%9D%CE%B1%CF%87%CE%BC%CE%AF%CE%B1%CF%82"} Δαυίβ Ναχμίας
+          %br
+          = succeed "." do
+            Παραγωγή, επιμέλεια &amp; παρουσίαση
+            %a{href: "https://el.wikipedia.org/wiki/%CE%94%CE%B1%CF%85%CE%AF%CE%B4_%CE%9D%CE%B1%CF%87%CE%BC%CE%AF%CE%B1%CF%82"} Δαυίβ Ναχμίας
       .column.is-one-fifth
         %figure.image.is-128x128
           %img{:alt => "David Nachmias Banner", :src => "/assets/media/images/david-nachmias-banner.png", :height => "130", :width => "220" }/
--#  %section
--#    .content
--#      .columns
--#        %a{href: "https://open.spotify.com/show/4EHrfThi3ZbSHvsvOFFUN7"}
--#          %figure.image
--#            %img{:alt => "Spotify Podcast Banner", :src => "/assets/media/images/spotify-podcast-badge-blk-wht-330x80.svg", :height => "80", :width => "330" }/
--#      -#    %a{href: ""}
--#      -#      %figure.image
--#      -#        %img{:alt => "Apple Podcast Banner", :src => "/assets/media/images/apple-podcast-listen.svg", :height => "80", :width => "330" }/

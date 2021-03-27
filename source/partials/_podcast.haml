@@ -3,17 +3,23 @@
     .columns
       .column.is-half
         %p
-          Η εκπομπή 'τιμής ένεκεν' μεταδίδεται το <strong>Σάββατο 13:00 ώρα Ελλάδος</strong> από το
+          Η εκπομπή <strong>Τιμής Ένεκεν</strong> μεταδίδεται <strong>Σάββατο 13:00 ώρα Ελλάδος</strong> από το
           = succeed "." do
             %a{href: "https://webradio.ert.gr/trito/"}τρίτο πρόγραμμα
           Η εκπομπή εκθέτει το έργο και το πνεύμα Ελλήνων του 20ου και 21ου αιώνα.
         %br
         %p
           Τροποποιημένη έκδοση της εκπομπής ειναι διαθέσιμη ως <strong>podcast</strong> σε επιλεγμένες πλατφόρμες διαμοιρασμού.
-      .columns
-        %a{href: "https://open.spotify.com/show/4EHrfThi3ZbSHvsvOFFUN7"}
-          %figure.image
-            %img{:alt => "Spotify Podcast Banner", :src => "/assets/media/images/spotify-podcast-badge-blk-wht-330x80.svg", :height => "80", :width => "330" }/
+      .column.is-half
+        .columns
+          .column.is-half
+            %a{href: "https://open.spotify.com/show/4EHrfThi3ZbSHvsvOFFUN7"}
+              %figure.image
+                %img{:alt => "Spotify Podcast Banner", :src => "/assets/media/images/spotify-podcast-badge-blk-wht-330x80.svg"}/
+          .column.is-half
+            %a{href: "https://webradio.ert.gr/trito/"}
+              %figure.image.is-128x128
+                %img{:alt => "Trito Programma Banner", :src => "/assets/media/images/trito-programma-banner.jpg"}/
         -#  %a{href: ""}
         -#    %figure.image
         -#      %img{:alt => "Apple Podcast Banner", :src => "/assets/media/images/apple-podcast-listen.svg", :height => "80", :width => "330" }/

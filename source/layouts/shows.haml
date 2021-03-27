@@ -8,15 +8,10 @@
       %hr
       .container
         = partial "partials/header"
-        %hr
+        %br
         .columns
           .column.is-one-third
             %p.title #{current_article.title}
-            %p <strong>Ημερομηνία</strong>: #{current_article.date.strftime("%d/%m/%Y")}
-            %p <strong>Ιδιότητα</strong>: #{current_article.data.crafts.join(", ")}
-            %p <strong>Θεματολογία</strong>: #{current_article.tags.join(", ")}
-          .column.is-two-thirds
-            %p.subtitle Περιγραφή
             .media
               .media-left
                 %figure
@@ -24,9 +19,14 @@
                     Your browser does not support the
                     %code audio
                     element.
+          .column.is-one-third
             %p #{current_article.data.intro}
+          .column.is-one-third
+            %p <strong>Ημερομηνία</strong>: #{current_article.date.strftime("%d/%m/%Y")}
+            %p <strong>Ιδιότητα</strong>: #{current_article.data.crafts.join(", ")}
+            %p <strong>Θεματολογία</strong>: #{current_article.tags.join(", ")}
         %hr
-        %h1.title Απομαγνητοφώνηση Εκπομπής
+        %h1.title Απομαγνητοφώνηση
         = yield
       %hr
       = partial "partials/footer"

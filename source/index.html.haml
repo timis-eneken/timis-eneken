@@ -1,7 +1,8 @@
 .container
   = partial "partials/header"
+  %br
+  = partial "partials/podcast"
   %section
-    %hr
   .container
     %section
       %table.table
@@ -15,7 +16,6 @@
             %tr
               %td
                 = link_to show.data.guest, show.url
-                %br
                 #{show.data.part}
               %td #{show.date.strftime("%d/%m/%Y")}
               %td #{show.data.tags}

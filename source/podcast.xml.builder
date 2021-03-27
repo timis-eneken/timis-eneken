@@ -23,7 +23,9 @@ xml.rss rss_attributes do
     xml.itunes :author, "David Nachmias"
     xml.itunes :subtitle, "Τιμής Ένεκεν"
     xml.itunes :explicit, "clean"
-    xml.itunes :category, text: "Society & Culture"
+    xml.itunes :category, text: "Society & Culture" do
+      xml.itunes :category, text: "Relationships"
+    end
     xml.itunes :summary, "Η εκπομπή 'Τιμής Ένεκεν' εκθέτει το έργο και το πνεύμα Ελλήνων του 20ου και 21ου αιώνα."
     xml.itunes :image, href: podcast_logo_uri
 

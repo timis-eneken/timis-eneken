@@ -10,7 +10,9 @@
     <itunes:author>David Nachmias</itunes:author>
     <itunes:subtitle>Τιμής Ένεκεν</itunes:subtitle>
     <itunes:explicit>clean</itunes:explicit>
-    <itunes:category text="Society &amp; Culture"/>
+    <itunes:category text="Society &amp; Culture">
+      <itunes:category text="Relationships"/>
+    </itunes:category>
     <itunes:summary>Η εκπομπή 'Τιμής Ένεκεν' εκθέτει το έργο και το πνεύμα Ελλήνων του 20ου και 21ου αιώνα.</itunes:summary>
     <itunes:image href="https://ia601403.us.archive.org/18/items/timis-eneken/timen-logo-web.png"/>
     <itunes:owner>

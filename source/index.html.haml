@@ -3,27 +3,5 @@
   %br
   = partial "partials/podcast"
   %section
-  .container
-    %section
-      %table.table
-        %thead
-          %th Προσκεκλημένος
-          %th Ημερομηνία
-          %th Θεματολογία
-          %th Εκπομπή
-        - blog('shows').articles.each do |show|
-          %tbody
-            %tr
-              %td
-                = link_to show.data.guest, show.url
-                #{show.data.part}
-              %td #{show.date.strftime("%d/%m/%Y")}
-              %td #{show.data.tags}
-              %td
-                .media
-                  .media-left
-                    %figure
-                      %audio{:controls => "", :src => "#{show.data.audio}"}
-                        Your browser does not support the
-                        %code audio
-                        element.
+    .container
+      = partial "partials/recent_shows_feed"

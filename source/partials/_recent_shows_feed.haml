@@ -1,22 +1,32 @@
 .columns
-  - blog('shows').articles[0...3].each do |show|
-    .column.is-one-third
-      .card
-        .card-image
-          %figure.image.is-4by3
-            %img{:alt => "profile picture", :src => "#{show.data.picture}" }/
-        .card-content
-          .content
-            %p.title
-              = link_to show.title, show.url
-            %p
-              #{show.date.strftime("%d/%m/%Y")}, μέρος #{show.data.part}
-          .media
-            .media-left
-              %figure
-                %audio{:controls => "", :src => "#{show.data.audio}"}
-                  Your browser does not support the
-                  %code audio
-                  element.
-          .content
-            %p #{show.data.intro}
+  - blog('shows').articles.each_slice(3).with_index do |shows, index|
+    - shows.each do |show|
+      .column.is-one-third
+        .card
+          .card-image
+            %figure.image.is-4by3
+              %img{:alt => "profile picture", :src => "#{show.data.picture}" }/
+          .card-content
+            .content
+              %p.subtitle
+                = link_to "#{show.title} #{show.data.part}", show.url
+              .columns
+                .column.is-half
+                  %a.title{:href => "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftimis-eneken.github.io#{show.url.gsub('/', '%2F')}&t=#{show.title.gsub(' ', '%20')}", :rel => "noopener", :target => "_blank", :title => "Share on Facebook"}
+                    %i.fab.fa-facebook-square
+                  %a.title{:href => "https://twitter.com/intent/tweet?source=http%3A%2F%2Ftimis-eneken.github.io#{show.url.gsub('/', '%2F')}&text=#{show.title.gsub(' ', '%20')}%20http%3A%2F%2Ftimis-eneken.github.io#{show.url}", :target => "_blank", :title => "Share on Twitter"}
+                    %i.fab.fa-twitter-square
+                  %a.title{:href => "http://www.reddit.com/submit?url=http%3A%2F%2Ftimis-eneken.github.io#{show.url.gsub('/', '%2F')}&title=#{show.title.gsub(' ', '%20')}", :target => "_blank", :title => "Submit to Reddit"}
+                    %i.fab.fa-reddit-square
+                .column.is-half
+                  %p.subtitle
+                    #{show.date.strftime("%d/%m/%Y")}
+            .media
+              .media-left
+                %figure
+                  %audio{:controls => "", :src => "#{show.data.audio}"}
+                    Your browser does not support the
+                    %code audio
+                    element.
+            .content
+              %p #{show.data.intro}

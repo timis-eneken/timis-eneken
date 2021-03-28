@@ -9,22 +9,45 @@
       .container
         = partial "partials/header"
         %br
+        = partial "partials/podcast"
+        %p.title #{current_article.title}, μέρος #{current_article.data.part}
+        %hr
         .columns
-          .column.is-one-third
-            %p.title #{current_article.title}
+          .column.is-half
             .media
               .media-left
                 %figure
+                  %p.subtitle Ραδιοφωνική (πλήρης)
                   %audio{:controls => "", :src => "#{current_article.data.audio}"}
                     Your browser does not support the
                     %code audio
                     element.
-          .column.is-one-third
+            %hr
+            %p.subtitle Εισαγωγή
             %p #{current_article.data.intro}
-          .column.is-one-third
+          .column.is-half
+            .media
+              .media-left
+                %figure
+                  %p.subtitle Podcast (τροποποιημένη)
+                  %audio{:controls => "", :src => "#{current_article.data.podcast_audio}"}
+                    Your browser does not support the
+                    %code audio
+                    element.
+            %hr
+            %p.subtitle Μεταδεδομένα
+            %p <strong>Καλεσμένος</strong>: #{current_article.data.guest}
             %p <strong>Ημερομηνία</strong>: #{current_article.date.strftime("%d/%m/%Y")}
             %p <strong>Ιδιότητα</strong>: #{current_article.data.crafts.join(", ")}
             %p <strong>Θεματολογία</strong>: #{current_article.tags.join(", ")}
+            %hr
+            %p.subtitle Διαμοιρασμός σε κοινωνικά δίκτυα
+            %a.title{:href => "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftimis-eneken.github.io#{current_article.url.gsub('/', '%2F')}&t=#{current_article.title.gsub(' ', '%20')}", :rel => "noopener", :target => "_blank", :title => "Share on Facebook"}
+              %i.fab.fa-facebook-square
+            %a.title{:href => "https://twitter.com/intent/tweet?source=http%3A%2F%2Ftimis-eneken.github.io#{current_article.url.gsub('/', '%2F')}&text=#{current_article.title.gsub(' ', '%20')}%20http%3A%2F%2Ftimis-eneken.github.io#{current_article.url}", :target => "_blank", :title => "Share on Twitter"}
+              %i.fab.fa-twitter-square
+            %a.title{:href => "http://www.reddit.com/submit?url=http%3A%2F%2Ftimis-eneken.github.io#{current_article.url.gsub('/', '%2F')}&title=#{current_article.title.gsub(' ', '%20')}", :target => "_blank", :title => "Submit to Reddit"}
+              %i.fab.fa-reddit-square
         %hr
         %h1.title Απομαγνητοφώνηση
         = yield

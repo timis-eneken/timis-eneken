@@ -1,0 +1,8 @@
+%p.subtitle Διαμοιρασμός
+
+%a.title{:href => "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftimis-eneken.github.io#{current_article.url.gsub('/', '%2F')}&t=#{current_article.title.gsub(' ', '%20')}", :rel => "noopener", :target => "_blank", :title => "Share on Facebook"}
+  %i.fab.fa-facebook-square
+%a.title{:href => "https://twitter.com/intent/tweet?source=http%3A%2F%2Ftimis-eneken.github.io#{current_article.url.gsub('/', '%2F')}&text=#{current_article.title.gsub(' ', '%20')}%20http%3A%2F%2Ftimis-eneken.github.io#{current_article.url}", :target => "_blank", :title => "Share on Twitter"}
+  %i.fab.fa-twitter-square
+%a.title{:href => "http://www.reddit.com/submit?url=http%3A%2F%2Ftimis-eneken.github.io#{current_article.url.gsub('/', '%2F')}&title=#{current_article.title.gsub(' ', '%20')}", :target => "_blank", :title => "Submit to Reddit"}
+  %i.fab.fa-reddit-square

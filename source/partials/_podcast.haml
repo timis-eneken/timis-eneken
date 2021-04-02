@@ -1,7 +1,7 @@
 %section.hero.is-small
   .hero-body
-    .columns
-      .column.is-half
+    .columns.is-mobile
+      .column.is-three-fifths
         %p
           Η εκπομπή <strong>Τιμής Ένεκεν</strong> μεταδίδεται <strong>Σάββατο 13:00 ώρα Ελλάδος</strong> από το
           = succeed "." do
@@ -10,16 +10,20 @@
         %br
         %p
           Τροποποιημένη έκδοση της εκπομπής ειναι διαθέσιμη ως <strong>podcast</strong> σε επιλεγμένες πλατφόρμες διαμοιρασμού.
-      .column.is-half
-        .columns
-          .column.is-half
-            %a{href: "https://open.spotify.com/show/4EHrfThi3ZbSHvsvOFFUN7"}
-              %figure.image
-                %img{:alt => "Spotify Podcast Banner", :src => "/assets/media/images/spotify-podcast-badge-blk-wht-330x80.svg"}/
-          .column.is-half
-            %a{href: "https://webradio.ert.gr/trito/"}
-              %figure.image.is-128x128
-                %img{:alt => "Trito Programma Banner", :src => "/assets/media/images/trito-programma-banner.jpg"}/
-        -#  %a{href: ""}
-        -#    %figure.image
-        -#      %img{:alt => "Apple Podcast Banner", :src => "/assets/media/images/apple-podcast-listen.svg", :height => "80", :width => "330" }/
+      .columns
+        .column.is-half
+          %a{href: "https://webradio.ert.gr/trito/"}
+            %figure.image.is-128x128
+              %img{:alt => "Trito Programma Banner", :src => "/assets/media/images/trito-programma-banner.jpg" }/
+        .column.is-half
+          %a{href: "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=1560945770"}
+            %figure.image
+              %img{:alt => "Apple Podcast Banner", :src => "/assets/media/images/apple-podcast-listen.svg" }/
+          %br
+          %a{href: "https://podcasts.google.com/feed/aHR0cHM6Ly90aW1pcy1lbmVrZW4uZ2l0aHViLmlvL3BvZGNhc3QueG1s" }
+            %figure.image
+              %img{:alt => "Google Podcast Banner", :src => "/assets/media/images/google-podcast-listen.svg" }/
+          %br
+          %a{href: "https://open.spotify.com/show/4EHrfThi3ZbSHvsvOFFUN7"}
+            %figure.image
+              %img{:alt => "Spotify Podcast Banner", :src => "/assets/media/images/spotify-podcast-badge-blk-wht-330x80.svg" }/

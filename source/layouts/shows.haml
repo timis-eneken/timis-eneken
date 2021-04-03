@@ -10,7 +10,7 @@
         = partial "partials/header"
         %br
         = partial "partials/podcast"
-        %p.title #{current_article.title}, μέρος #{current_article.data.part}
+        %p.title #{current_article.title} (#{current_article.data.part}) #{podcast_author} #{show_name}
         %hr
         .columns
           .column.is-half

@@ -43,7 +43,7 @@ xml.rss rss_attributes do
         xml.link "https://timis-eneken.github.io#{episode.url}"
 
         xml.itunes :author, "David Nachmias"
-        xml.itunes :title, episode.title
+        xml.itunes :title, "#{episode.title} (#{episode.data.part}) #{podcast_author}"
         xml.itunes :subtitle, episode.data.crafts.join(', ')
         xml.itunes :summary, episode.data.intro
         xml.itunes :duration, episode.data.podcast_duration

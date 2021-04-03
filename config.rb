@@ -85,10 +85,18 @@ helpers do
     "https://timis-eneken.github.io/podcast.xml"
   end
 
+  def podcast_author
+    "Δαυίβ Ναχμίας"
+  end
+
+  def show_name
+    "ΤΙΜΗΣ ΕΝΕΚΕΝ"
+  end
+
   def podcast_summary
     summary ="""
     Η εκπομπή 'Τιμής Ένεκεν' εκθέτει το έργο και το πνεύμα Ελλήνων του 20ου και 21ου αιώνα.
-    Παραγωγή, επιμέλεια και παρουσίαση από τον Δαυίβ Ναχμία.
+    Παραγωγή, επιμέλεια και παρουσίαση Δαυίβ Ναχμίας.
     Ψηφιακό αρχείο διαθέσιμο στην ιστοσελίδα https://timis-eneken.github.io/
     """
     return summary

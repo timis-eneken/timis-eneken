@@ -2,7 +2,7 @@
 title: Γιώργος Μανιώτης
 date: 2018-09-01 13:00 EET
 tags: καθημερινότητα, οικογένεια, θέατρο, καλλιτέχνης
-part: A' από 3
+part: A' μέρος
 picture: "/assets/media/images/authors/giorgos-maniotis-profile-front-520x387.jpg"
 podcast_duration: "0:57:09"
 podcast_artwork: "https://archive.org/download/timen-logo-v4/timen-logo-v4.png"

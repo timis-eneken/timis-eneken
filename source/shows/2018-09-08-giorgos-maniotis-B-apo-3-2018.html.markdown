@@ -3,6 +3,7 @@ title: Γιώργος Μανιώτης
 date: 2018-09-08 13:00 EET
 tags: γάμος,υιοθεσία,εργασία,ευτυχία,οικογένεια,ποδόσφαιρο,άνδρας,κοινωνία,νεολαία
 part: Β' μέρος
+episode_release_date: "08/09/2018"
 picture: "/assets/media/images/authors/giorgos-maniotis-profile-front-520x387.jpg"
 podcast_duration: "1:07:37"
 podcast_artwork: "https://ia801403.us.archive.org/18/items/timis-eneken/maniotis-podcast-picture.png"

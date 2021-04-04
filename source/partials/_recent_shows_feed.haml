@@ -1,5 +1,5 @@
-.columns
-  - blog('shows').articles.each_slice(3).each_with_index do |shows, index|
+- blog('shows').articles.group_by {|article| article.title}.each do |title, shows|
+  .columns
     - shows.reverse.each do |show|
       .column.is-one-third
         .card
@@ -20,7 +20,7 @@
                     %i.fab.fa-reddit-square
                 .column.is-half
                   %p.subtitle
-                    #{show.date.strftime("%d/%m/%Y")}
+                    #{show.data.episode_release_date}
             .media
               .media-left
                 %figure

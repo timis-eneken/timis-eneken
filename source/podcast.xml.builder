@@ -37,7 +37,7 @@ xml.rss rss_attributes do
     blog('shows').articles.each do |episode|
       xml.item do
         xml.title "#{episode.title} #{episode.data.part}"
-        xml.description episode.data.intro
+        xml.description "#{episode.data.intro}. Ημερομηνία δημοσίευσης τρίτο πρόγραμμα '#{episode.data.episode_release_date}'"
         xml.pubDate episode.date.rfc2822
         xml.guid "#{episode.url}"
         xml.link "https://timis-eneken.github.io#{episode.url}"

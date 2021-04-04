@@ -33,7 +33,7 @@ audio_files.each do  |f|
     tag.year = year.to_i
     tag.track = track
     show = "Τιμής Ένεκεν"
-    host = "Δαυίβ Ναχμίας"
+    host = "Δαυίδ Ναχμίας"
     terms = "CC BY-NC-ND 4.0"
     # tag.comment = comment
 

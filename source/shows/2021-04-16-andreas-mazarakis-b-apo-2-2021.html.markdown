@@ -1,6 +1,6 @@
 ---
 title: Ανδρέας Μαζαράκης
-date: 2021-04-18 12:00 EET
+date: 2021-04-16 17:00 EET
 tags: Ελλάδα, Άνθρωπος, Κοινωνία, Μέλλον, Ποδόσφαιρο, Πολιτική
 part: Β' μέρος
 picture: "/assets/media/images/authors/andreas-mazarakis-550x550.png"

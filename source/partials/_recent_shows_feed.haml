@@ -21,7 +21,7 @@
         .card
           .card-content
             %p.subtitle
-              = link_to "#{title} (#{show.data.part}) #{podcast_author} ΤΙΜΗΣ ΕΝΕΚΕΝ", show.url
+              = link_to "#{podcast_author_title(title,show.data.part,podcast_author)} ΤΙΜΗΣ ΕΝΕΚΕΝ", show.url
               %a.title{:href => "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftimis-eneken.github.io#{show.url.gsub('/', '%2F')}&t=#{show.title.gsub(' ', '%20')}", :rel => "noopener", :target => "_blank", :title => "Share on Facebook"}
                 %i.fab.fa-facebook-square
               %a.title{:href => "https://twitter.com/intent/tweet?source=http%3A%2F%2Ftimis-eneken.github.io#{show.url.gsub('/', '%2F')}&text=#{show.title.gsub(' ', '%20')}%20http%3A%2F%2Ftimis-eneken.github.io#{show.url}", :target => "_blank", :title => "Share on Twitter"}

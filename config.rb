@@ -102,6 +102,16 @@ helpers do
     return summary
   end
 
+  def podcast_author_title(title, part, author)
+    r = ""
+    if part.size > 0
+      r = "#{title} (#{part}) #{podcast_author}"
+    else
+      r = "#{title} #{podcast_author}"
+    end
+    r
+  end
+
 end
 
 # Build-specific configuration

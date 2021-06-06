@@ -78,7 +78,7 @@ helpers do
   end
 
   def podcast_logo_uri
-    "https://ia601403.us.archive.org/18/items/timis-eneken/timen-logo-web.png"
+    "https://ia601403.us.archive.org/18/items/timis-eneken/timis-eneken-podcast-logo.png"
   end
 
   def podcast_feed_url

@@ -51,7 +51,7 @@
             %a.title{:href => "http://www.reddit.com/submit?url=http%3A%2F%2Ftimis-eneken.github.io#{current_article.url.gsub('/', '%2F')}&title=#{current_article.title.gsub(' ', '%20')}", :target => "_blank", :title => "Submit to Reddit"}
               %i.fab.fa-reddit-square
         %hr
-        %h1.title Απομαγνητοφώνηση
+        -# %h1.title Απομαγνητοφώνηση
         = yield
       %hr
       = partial "partials/footer"

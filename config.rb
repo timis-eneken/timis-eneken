@@ -21,7 +21,7 @@ Haml::TempleEngine.disable_option_validator!
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/media/images'
-set :url_root, 'http://timen.gr'
+set :url_root, 'http://timis-eneken.github.io'
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/

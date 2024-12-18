@@ -1,0 +1,11 @@
+- sorted_titles = blog('shows').articles.group_by { |article| article.title }.keys.sort
+.grid-container
+  - sorted_titles.each do |title|
+    - shows = blog('shows').articles.select { |article| article.title == title }
+    - show = shows[0]
+    .grid-item
+      = link_to show.url do
+        %div
+          %img.grid-image{ src: show.data.picture, alt: title }
+        %p.title.is-5= title
+

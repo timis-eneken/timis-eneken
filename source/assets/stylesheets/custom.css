@@ -1,0 +1,41 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.grid-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.grid-item:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-5px);
+}
+
+.grid-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* Ensures the image stays cropped nicely */
+  border-radius: 50%; /* Optional: Makes the image circular */
+  margin-bottom: 0.5rem;
+}
+
+.title.is-5 {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+  text-decoration: none;
+  line-height: 1.2;
+}

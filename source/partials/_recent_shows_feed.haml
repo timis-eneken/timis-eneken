@@ -31,14 +31,14 @@
             .column.is-half
               %p.subtitle Ραδιοφωνική (πλήρης)
               %figure
-                %audio{:controls => "", :src => "#{show.data.audio}"}
+                %audio{:controls => "", :src => "#{show.data.audio}", :preload => "none"}
                   Your browser does not support the
                   %code audio
                   element.
             .column.is-half
               %p.subtitle Podcast (τροποποιημένη)
               %figure
-                %audio{:controls => "", :src => "#{show.data.podcast_audio}"}
+                %audio{:controls => "", :src => "#{show.data.podcast_audio}", :preload => "none"}
                   Your browser does not support the
                   %code audio
                   element.

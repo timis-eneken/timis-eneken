@@ -20,7 +20,7 @@
               .media-left
                 %figure
                   %p.subtitle Ραδιοφωνική (πλήρης)
-                  %audio{:controls => "", :src => "#{current_article.data.audio}"}
+                  %audio{:controls => "", :src => "#{current_article.data.audio}", :preload => "none"}
                     Your browser does not support the
                     %code audio
                     element.
@@ -32,7 +32,7 @@
               .media-left
                 %figure
                   %p.subtitle Podcast (τροποποιημένη)
-                  %audio{:controls => "", :src => "#{current_article.data.podcast_audio}"}
+                  %audio{:controls => "", :src => "#{current_article.data.podcast_audio}", :preload => "none"}
                     Your browser does not support the
                     %code audio
                     element.
